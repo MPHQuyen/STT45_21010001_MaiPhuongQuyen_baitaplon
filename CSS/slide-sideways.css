@@ -1,0 +1,73 @@
+
+#slide-sideways-00{
+    padding-top: 50px;
+    padding-bottom: 10px;
+    width: 1175px;
+    margin: auto;
+
+}
+.slider-item{
+    max-width: 50vh;
+    height: 70vh;
+}
+.slider-item-one{
+    background-image: url(../IMGAGE/slide-sideways1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider-item-two{
+    background-image: url(../IMGAGE/slide-sideways2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider-item-three{
+    background-image: url(../IMGAGE/slide-sideways3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider-item-four{
+    background-image: url(../IMGAGE/slide-sideways4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider-item-five{
+    background-image: url(../IMGAGE/slide-sideways5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*-----------------*/
+.slider-item-one1{
+    background-image: url(../IMGAGE/slide-sideways-01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider-item-two2{
+    background-image: url(../IMGAGE/slide-sideways-02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider-item-three3{
+    background-image: url(../IMGAGE/slide-sideways-03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider-item-four4{
+    background-image: url(../IMGAGE/slide-sideways-04.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider-item-five5{
+    background-image: url(../IMGAGE/slide-sideways-05.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

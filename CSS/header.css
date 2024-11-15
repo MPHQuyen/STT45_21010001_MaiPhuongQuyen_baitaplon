@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    /*đây là font chữ ko chân*/
+    /*đây là thuộc tính để xét font chữ cho cả website*/
+}
+
+
+/*h1:hover{
+    color: aquamarine;
+}
+h1{
+    color: black;
+}*/
+
+
+/*
+    Quy tắc 1 khi làm 1 trang web
+    1. Từ ngoài vào trong
+    2. Từ trên xuống dưới
+    3. Từ tổng quan đến chi tiết
+
+*/
+
+
+/*
+    Quy tắc 2 khi làm 1 trang web
+    1. Vị trí
+    2. Kích thước ( width: rộng, heightr: cao)
+    3. Màu sắc
+    4. Kiểu dáng ( kiểu chữ, hình tròn, vuông,..)
+
+*/
+
+.subnav1 {
+    display: none;
+    /* Ẩn danh sách con khi không hover */
+    position: absolute;
+    /* Thiết lập vị trí tuyệt đối */
+    z-index: 1;
+    /* Đặt z-index lớn hơn các phần tử khác */
+
+}
+
+li:hover .subnav1 {
+    display: block;
+    /* Hiển thị danh sách con khi hover vào thẻ li cha */
+}
+
+.class2k3 {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    height: 40%;
+    padding-top: 5px;
+    transition-duration: .3s;
+}
+
+#logo img:hover {
+    transition: .10s;
+    transform: scale(.9);
+}
+
+#header {
+    background-color: #000;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav,
+.subnav2 {
+    /* dùng dấu , để cho 2 thẻ #nav và .subnav cùng kế thừa 
+                    1 thuộc tính dưới đây*/
+    list-style-type: none;
+    /*dùng để bỏ dấu chấm của thẻ ul*/
+}
+
+#nav,
+.subnav1 {
+    /* dùng dấu , để cho 2 thẻ #nav và .subnav cùng kế thừa 
+    1 thuộc tính dưới đây*/
+    list-style-type: none;
+    /*dùng để bỏ dấu chấm của thẻ ul*/
+}
+
+#nav>li {
+    display: inline-block;
+    /*cái này dùng để đưa 5 cái li lên cùng 1 dòng*/
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav>li>.distance {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li .distance {
+    text-decoration: none;
+    /* cái này dùng để bỏ gạch chân mặc định*/
+    line-height: 50px;
+    /*cái này dùng để cho cái hai lai khi bôi đen sẽ bằng
+                          height của header*/
+    padding: 0 24px;
+    /* dùng để giãn khoảng cách giữa các chữ trong id=nav*/
+    display: block;
+}
+#nav li .tk-gh{
+    text-decoration: none;
+}
+#nav li:hover .subnav2 {
+    display: block;
+}
+
+#nav li:hover .subnav1 {
+    display: block;
+}
+
+#nav>li:hover>.distance,
+#nav .subnav2 li:hover a {
+    color: #000;
+    background-color: #ccc;
+
+}
+
+#nav>li:hover>.distance,
+#nav .subnav1 li:hover a {
+    color: #000;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+#nav .subnav2 {
+    display: none;
+    /*cái này dùng để ẩn thằng con subnav đi*/
+    min-width: 260px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav1 {
+    display: none;
+    /*cái này dùng để ẩn thằng con subnav đi*/
+    border-radius: 10px;
+    min-width: 260px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    list-style: none;
+    padding-left: 0;
+}
+
+#nav .subnav2 .distance {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#nav .subnav1 .distance {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+
+}
+
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+
+#nav {
+    position: relative;
+    z-index: 2;
+}
+
+/* Các phần tử khác */
+.other-elements {
+    position: relative;
+    z-index: 1;
+}
+
+#header .search-btn:hover {
+    cursor: pointer;
+    background-color: #f44336;
+}
+
+/*------------------*/
+
+
+
+.container {
+    position: relative;
+    box-sizing: border-box;
+    width: fit-content;
+}
+
+.mainbox {
+    box-sizing: border-box;
+    position: relative;
+    width: 230px;
+    height: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    border-radius: 160px;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+
+.checkbox:focus {
+    border: none;
+    outline: none;
+}
+
+.checkbox:checked {
+    right: 10px;
+}
+
+.checkbox:checked~.mainbox {
+    width: 50px;
+}
+
+.checkbox:checked~.mainbox .search_input {
+    width: 0;
+    height: 0px;
+}
+
+.checkbox:checked~.mainbox .iconContainer {
+    padding-right: 8px;
+}
+
+.checkbox {
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 17px;
+    top: 10px;
+    z-index: 9;
+    cursor: pointer;
+    appearance: none;
+}
+
+.search_input {
+    box-sizing: border-box;
+    height: 100%;
+    width: 170px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    font-size: 1em;
+    color: black;
+    transition: all 0.3s ease;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.search_input::placeholder {
+    color: rgba(255, 255, 255, 0.776);
+}
+
+.iconContainer {
+    box-sizing: border-box;
+    padding-top: 5px;
+    width: fit-content;
+    transition: all 0.3s ease;
+}
+
+.search_icon {
+    box-sizing: border-box;
+    fill: black;
+    font-size: 1.3em;
+}
+
+.silde-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.xsp{
+    font-size:16px; 
+    padding-top:3px;
+    padding-left: 10px;
+}
+.xsp:hover {
+    transform: scale(1.5);
+    color: red;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+.header__cart {
+    text-align: center;
+}
+.header__cart-wrap:hover .header__cart-list {
+    display: block;
+}
+/*Đóng mở cart------------------------------------------------------------*/
+.header__cart-list {
+    position: absolute;
+    top: calc(100% + 6px);
+    right: -4px;
+    background-color: white;
+    box-shadow: 1px 1px 5px #ccc;
+    width: 300px;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px #ccc;
+    display: none;
+    cursor: default;
+    z-index: 10;
+}
+
+.header__cart-list::after {
+    content: "";
+    position: absolute;
+    right: 14px;
+    top: -22px;
+    border-width: 14px 22px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    cursor: pointer;
+}
+.header__cart-notice {
+
+    color: white;
+}
+.header__cart-item-btn{
+    color: black;
+}
+.header__cart-item-btn:hover {
+    transform: scale(1.5);
+    color: red;
+}
+/* responsive */
+@media screen and (max-width: 576px) {
+    footer {
+        padding-left: 7.5px;
+        padding-right: 7.5px;
+    }
+    .header__cart-list {
+        width: 300px;
+    }
+}
+/*Rút ngắn tên thành dấu ...*/
+.pt-name{
+    display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}

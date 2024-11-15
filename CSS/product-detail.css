@@ -1,0 +1,161 @@
+.product-detail .wrapper-images img, .img-sel-color img {
+    border: 2px solid rgb(201, 190, 190);
+    padding: 2px;
+}
+
+.product-detail .image-large {
+
+}
+
+.instruct-link {
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instruct-link svg {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.product-detail .img-sel-color {
+    width: 50px !important;
+}
+
+.product-detail .number-order {
+    transition-duration: 0.3s;
+}
+
+.product-detail .number-order:hover {
+    background-color: black !important;
+    color: white !important;
+}
+
+
+
+.text-fs-normal {
+    font-size: 13px;
+}
+ 
+
+.box-input-number-cart {
+    width: 130px;
+}
+
+.box-input-number-cart input {
+    text-align: center; 
+    padding: 10px 15px;
+    border-radius: 45px;
+    border-color: transparent;
+    background-color: #ebebeb;
+    width: 100%;
+    outline: none;
+}
+
+.bg-icon-prd{
+    background-color: #ebebeb;
+    width: 650px;
+    height: 230px;
+}
+.box-input-number-cart button {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    border: none;
+    width: 25px;
+    outline: none;
+}
+
+.box-input-number-cart button:first-child {
+    left: 10%;
+}
+
+.box-input-number-cart button:last-child {
+    right: 10%;
+}
+
+.product-detail .btn-buy {
+    min-width: 150px !important;
+}
+
+.product-detail .btn-buy:hover {
+    background-color: #ec1212;
+    /* color:#333; */
+}
+
+.product-info img {
+    width: 40px !important;
+}
+
+.product-info div {
+    font-size: 15px;
+}
+
+.product-info div p {
+    font-size: 13px; 
+}
+
+tr {
+    display: flex;
+}
+
+tr th {
+    min-width: 180px;
+    padding-right: 20px;
+    font-weight: bolder;
+    font-size: 16px;
+    text-decoration: underline;
+    line-height: 1.9em;
+
+}
+
+tr td {
+    line-height: 1.9em; 
+    /* min-width: 80px; */
+}
+
+/* tr:nth-child(odd) {
+    background-color: red;
+} */
+
+.square {
+    width: 17px;
+    height: 17px;
+    /* background-color: red; */
+}
+
+tr th::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    background-color: #000;
+    vertical-align: middle;
+    margin-right: 11px;
+    border-radius: 100%;
+}
+
+ul .dot::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    background-color: #000;
+    vertical-align: middle;
+    margin-right: 11px;
+    border-radius: 100%;
+}
+ol, ul{
+    padding-left: 0px;
+    font-size: 16px;
+}
+
+.see-more {
+    width: 160px;
+}
+
+.see-more:hover {
+    background-color: #333 !important;
+    color: #fff !important;
+}

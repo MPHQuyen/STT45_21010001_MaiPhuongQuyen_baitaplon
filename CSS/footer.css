@@ -1,0 +1,99 @@
+h3 {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.link-ft {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+}
+.link-ft,
+.link-ft:hover {
+  text-decoration: none !important;
+}
+.ft-123 {
+  padding: 7rem 0;
+  background: #000;
+  color: #777;
+}
+
+.ft-123 .footer-site-logo {
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.ft-123 h3 {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.ft-123 .links li {
+  margin-bottom: 10px;
+}
+
+.ft-123 .links li .link-ft {
+  color: #999;
+}
+
+.ft-123 .links li .link-ft:hover {
+  color: #fff;
+}
+
+.ft-123 .link-menu li {
+  display: inline-block;
+}
+
+.ft-123 .link-menu li .link-ft {
+  color: #fff;
+  display: inline-block;
+  padding: 10px;
+}
+
+.ft-123 .link-menu.nav-left li:first-child .link-ft {
+  padding-left: 0;
+}
+
+.ft-123 .link-menu.nav-right li:last-child .link-ft {
+  padding-left: 0;
+}
+
+.ft-123 .social li {
+  display: inline-block;
+}
+
+.ft-123 .social li .link-ft {
+  display: block;
+  padding: 10px;
+  color: #ccc;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+
+  background: none;
+  border-radius: 20%;
+  transition: .5s;
+}
+
+
+.ft-123 .social li .link-ft:hover {
+  color: #ffee10;
+  box-shadow: 0 0 5px #ffee10;
+  text-shadow: 0 0 5px #ffee10;
+}
+
+.ft-123 .social li:last-child .link-ft {
+  padding-right: 0;
+}
+
+.ft-123 .line {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ic-lk {
+  font-size: 20px;
+}

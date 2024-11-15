@@ -1,0 +1,342 @@
+/*-----------------Sale--------------------------*/
+.dn {
+    top: 90px;
+    font-size: 18px;
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid white;
+    display: inline-block;
+    color: white;
+    font-weight: 600;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #111;
+    line-height: 1.15;
+}
+
+#wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.headline {
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.sa {
+    top: 90px;
+    font-size: 18px;
+    color: #bebebe;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid white;
+    display: inline-block;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+}
+
+.content .imgage-item {
+    width: 50%;
+}
+
+#imgage-item-1 {
+    padding-top: 10px;
+}
+
+ul.products,
+ul.products2 {
+    width: 50%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul.products li {
+    display: block;
+    width: 33.333%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+ul.products2 li {
+    flex-basis: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+ul.products li img,
+ul.products2 li img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul.products li .product-top,
+ul.products2 li .product-top {
+    position: relative;
+    overflow: hidden;
+}
+
+ul.products li .product-top .product-thumb,
+ul.products2 li .product-top .product-thumb {
+    display: block;
+}
+
+ul.products li:hover .product-top .product-thumb img,
+ul.products2 li:hover .product-top .product-thumb img {
+    filter: opacity(80%);
+}
+
+ul.products li .product-top .product-thumb img,
+ul.products2 li .product-top .product-thumb img {
+    display: block;
+}
+
+ul.products li .product-top button.buy-now,
+ul.products2 li .product-top button.buy-now {
+    
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: #3c99b0;
+    color: #fff;
+    padding: 6px 0px;
+    position: absolute;
+    bottom: -66px;
+    width: 100%;
+    transition: 0.25s ease-in-out;
+    opacity: 0.85;
+}
+
+ul.products li:hover button.buy-now,
+ul.products2 li:hover button.buy-now {
+    bottom: 0px;
+}
+
+ul.products li .product-info,
+ul.products2 li .product-info {
+    padding: 10px 0px;
+}
+
+ul.products li .product-info a,
+ul.products2 li .product-info a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+}
+
+ul.products li .product-info .product-name,
+ul.products2 li .product-info .product-name {
+    color: #334862;
+    padding: 3px 0px;
+}
+
+ul.products li .product-info .product-name2,
+ul.products2 li .product-info .product-name2 {
+    color: #334862;
+    padding: 3px 0px;
+}
+
+.slider2 {
+    padding-left: 20%;
+}
+
+.sale2 {
+    text-decoration: none;
+}
+
+
+/*----------------  Sản phẩm  --------------------------*/
+
+#All_product_wrapper {
+    max-width: 1175px;
+    margin: 0 auto;
+}
+
+ul.All_product_products {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+}
+
+ul.All_product_products li {
+    flex-basis: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+ul.All_product_products li img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+ul.All_product_products li .product-top {
+    position: relative;
+    overflow: hidden;
+}
+
+ul.All_product_products li .product-top .product-thumb {
+    display: block;
+}
+
+ul.All_product_products li:hover .product-top .product-thumb img {
+    filter: opacity(80%);
+}
+
+ul.All_product_products li .product-top .product-thumb img {
+    display: block;
+}
+
+ul.All_product_products li .product-top button.buy-now {
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: #3c99b0;
+    color: #fff;
+    padding: 6px 0px;
+    position: absolute;
+    bottom: -36px;
+    width: 100%;
+    transition: 0.25s ease-in-out;
+    opacity: 0.85;
+}
+
+ul.All_product_products li:hover button.buy-now {
+    bottom: 0px;
+}
+
+ul.All_product_products li .product-info {
+    padding: 10px 0px;
+}
+
+ul.All_product_products li .product-info a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+}
+
+ul.All_product_products li .product-info .product-name {
+    color: #334862;
+    padding: 3px 0px;
+}
+
+/*---------------------------------------------------------*/
+#carouselExampleControls {
+    max-width: 100%; /* Chiếm toàn bộ chiều rộng của cha */
+    overflow: hidden; /* Ẩn phần nằm ngoài phạm vi của carousel */
+  }
+  
+  /* Thay đổi kích thước của các hình ảnh trong carousel */
+  .silde-img {
+    width: 100%; /* Chiếm toàn bộ chiều rộng của carousel */
+    height: auto; /* Đảm bảo tỷ lệ khung hình được bảo toàn */
+  }
+  
+  /* Ẩn hiển thị thanh điều hướng (prev/next) khi chưa hover */
+  .carousel-control-prev,
+  .carousel-control-next {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Hiển thị thanh điều hướng khi hover vào carousel */
+  #carouselExampleControls:hover .carousel-control-prev,
+  #carouselExampleControls:hover .carousel-control-next {
+    opacity: 1;
+  }
+
+/*----------------*/
+
+.btn2 {
+    margin-top: 5px;
+    position: relative;
+    display: block;
+    padding: 8px 30px;
+    border: 2px solid #212121;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.3s;
+    background:none
+}
+
+.btn2::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - -2px);
+    background-color: #212121;
+    transition: 0.3s ease-out;
+    transform: scaleY(1);
+    
+}
+
+.btn2::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 50px);
+    background-color: #212121;
+    transition: 0.3s ease-out;
+    transform: scaleY(1);
+    
+}
+
+.btn2:hover::before {
+    transform: translateY(-25px);
+    height: 0;
+    
+}
+
+.btn2:hover::after {
+    transform: scaleX(0);
+    transition-delay: 0.15s;
+    
+}
+
+.btn2:hover {
+    border: 2px solid #212121;
+    font-weight: 600;
+    color: #212121;
+    text-decoration: none;
+}
+
+.btn2 span {
+    position: relative;
+    z-index: 3;
+}
+
+button {
+    text-decoration: none;
+    border: none;
+}
